@@ -1,0 +1,31 @@
+[project]
+name = "prayer_times"
+requires-python = ">=3.10"
+description = "A Python Wrapper to interface with api.muwaqqit.com"
+version = "0.1.0" # Not really going to be updated
+authors = [
+    { name = "Rashid N H M", email = "95639609+rashidnhm@users.noreply.github.com" },
+]
+classifiers = [
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+
+    # Indicate who your project is intended for
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+
+    # Specify the Python versions you support here.
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "islam @ git+https://github.com/abougouffa/pyIslam.git@master"
+]
+
+[build-system]
+requires = ["setuptools >= 61"]
+build-backend = "setuptools.build_meta"

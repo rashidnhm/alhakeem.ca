@@ -1,1 +1,6 @@
 public/
+*.egg-info/
+__pycache__/
+*.pyc
+build/
+.venv/
