@@ -1,0 +1,21 @@
+{{ $prayer_times := site.Data.prayer_times }}
+<table class="hx-w-max">
+    <thead>
+        <tr>
+            <th >Prayer</th>
+            <th>Waqt</th>
+            <th>Adhan</th>
+            <th>Iqama</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range $prayer_times }}
+        <tr>
+            <td>{{ .name }}</td>
+            <td>{{ .waqt }}</td>
+            <td>{{ .adhan }}</td>
+            <td>{{ .iqamah }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
