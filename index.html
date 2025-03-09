@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Al-Hakeem | Community & Spirituality</title>
+    
+    <!-- Preload the hero image -->
+       <link rel="preload" href="mosque-hero.jpg" as="image">
+           
+           
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#38726C',
+                    accent: '#F8B400',
+                    light: '#F5F7FA',
+                    dark: '#1A2238'
+                },
+                backgroundImage: {
+                    'hero-pattern': "url('./mosque-hero.jpg')",
+                }
+            }
+        }
+    }
+    </script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-light text-gray-800 font-sans">
+    <!-- Fixed Header -->
+    <header class="bg-dark text-white fixed w-full z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-mosque text-2xl"></i>
+                <h1 class="ml-3 text-xl font-light">Masjid <span class="text-accent font-semibold">Al-Hakeem</span></h1>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center">
+                    <li class="mx-3 my-2"><a href="#home" class="hover:text-accent transition-colors">Home</a></li>
+                    <li class="mx-3 my-2"><a href="#about" class="hover:text-accent transition-colors">About</a></li>
+                    <li class="mx-3 my-2"><a href="#services" class="hover:text-accent transition-colors">Services</a></li>
+                    <li class="mx-3 my-2"><a href="#prayer-times" class="hover:text-accent transition-colors">Prayer Times</a></li>
+                    <li class="mx-3 my-2"><a href="#events" class="hover:text-accent transition-colors">Events</a></li>
+                    <li class="mx-3 my-2"><a href="#donate" class="hover:text-accent transition-colors">Donate</a></li>
+                    <li class="mx-3 my-2"><a href="#contact" class="hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with optimized local image -->
+    <section id="home" class="relative h-screen flex flex-col justify-center items-center text-center px-4 text-white">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-dark">
+            <img src="./mosque-hero.jpg" alt="Masjid Al-Hakeem" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10">
+            <h2 class="text-4xl md:text-5xl font-light mb-6">Welcome to Masjid Al-Hakeem</h2>
+            <p class="max-w-2xl text-lg mb-8">A center for spiritual growth, community service, and Islamic education in the heart of our community.</p>
+            <a href="#prayer-times" class="bg-primary hover:bg-accent px-6 py-3 rounded transition-all transform hover:-translate-y-1 inline-block">View Prayer Times</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl text-center font-light mb-12 text-dark">About Our Mosque</h2>
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 p-4">
+                    <p class="mb-4">Masjid Al-Hakeem was established in 2005 with the vision of creating a welcoming space for Muslims to worship, learn, and build community. Our mosque serves as a spiritual haven and educational center.</p>
+                    <p class="mb-4">We are committed to providing a nurturing environment that celebrates Islamic traditions while engaging with contemporary challenges facing our community.</p>
+                    <p>Our mission is to promote the teachings of Islam based on the Quran and Sunnah, foster unity among Muslims, and build bridges with the wider community through interfaith dialogue and community service.</p>
+                </div>
+                <div class="w-full lg:w-1/2 p-4">
+                    <div class="h-80 rounded-lg shadow-xl bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/600x400/?islamic-art')"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl text-center font-light mb-12 text-dark">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow hover:-translate-y-2 transform transition-transform">
+                    <div class="text-primary text-4xl mb-4 text-center">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl mb-3 text-center">Quranic Studies</h3>
+                    <p class="text-center">Join our comprehensive Quran memorization and tafsir classes for all ages and levels.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow hover:-translate-y-2 transform transition-transform">
+                    <div class="text-primary text-4xl mb-4 text-center">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl mb-3 text-center">Community Events</h3>
+                    <p class="text-center">Regular gatherings, iftars during Ramadan, and community service opportunities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow hover:-translate-y-2 transform transition-transform">
+                    <div class="text-primary text-4xl mb-4 text-center">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl mb-3 text-center">Islamic Education</h3>
+                    <p class="text-center">Weekend schools, adult learning circles, and specialized workshops on Islamic topics.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow hover:-translate-y-2 transform transition-transform">
+                    <div class="text-primary text-4xl mb-4 text-center">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-xl mb-3 text-center">Social Services</h3>
+                    <p class="text-center">Counseling, marriage services, funeral arrangements, and support for those in need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Times Section -->
+    <section id="prayer-times" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl text-center font-light mb-12">Today's Prayer Times</h2>
+            <div class="max-w-3xl mx-auto overflow-hidden rounded-lg">
+                <div class="hidden md:grid md:grid-cols-4 bg-black bg-opacity-20 p-4 font-semibold text-center">
+                    <div>Prayer</div>
+                    <div>Waqt (Start)</div>
+                    <div>Adhan</div>
+                    <div>Iqamah</div>
+                </div>
+                <div class="md:grid md:grid-cols-4 p-4 border-b border-white border-opacity-10 text-left md:text-center">
+                    <div class="font-medium mb-2 md:mb-0 text-accent md:text-white">Fajr</div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Waqt: </span><span class="font-semibold text-accent">5:15 AM</span></div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Adhan: </span><span class="font-semibold text-accent">5:15 AM</span></div>
+                    <div><span class="md:hidden text-gray-300 inline-block w-16">Iqamah: </span><span class="font-semibold text-accent">5:30 AM</span></div>
+                </div>
+                <div class="md:grid md:grid-cols-4 p-4 border-b border-white border-opacity-10 bg-white bg-opacity-5 text-left md:text-center">
+                    <div class="font-medium mb-2 md:mb-0 text-accent md:text-white">Sunrise</div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Waqt: </span><span class="font-semibold text-accent">6:40 AM</span></div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Adhan: </span><span class="font-semibold text-accent">-</span></div>
+                    <div><span class="md:hidden text-gray-300 inline-block w-16">Iqamah: </span><span class="font-semibold text-accent">-</span></div>
+                </div>
+                <div class="md:grid md:grid-cols-4 p-4 border-b border-white border-opacity-10 text-left md:text-center">
+                    <div class="font-medium mb-2 md:mb-0 text-accent md:text-white">Dhuhr</div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Waqt: </span><span class="font-semibold text-accent">1:20 PM</span></div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Adhan: </span><span class="font-semibold text-accent">1:20 PM</span></div>
+                    <div><span class="md:hidden text-gray-300 inline-block w-16">Iqamah: </span><span class="font-semibold text-accent">1:30 PM</span></div>
+                </div>
+                <div class="md:grid md:grid-cols-4 p-4 border-b border-white border-opacity-10 bg-white bg-opacity-5 text-left md:text-center">
+                    <div class="font-medium mb-2 md:mb-0 text-accent md:text-white">Asr</div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Waqt: </span><span class="font-semibold text-accent">4:45 PM</span></div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Adhan: </span><span class="font-semibold text-accent">4:45 PM</span></div>
+                    <div><span class="md:hidden text-gray-300 inline-block w-16">Iqamah: </span><span class="font-semibold text-accent">5:00 PM</span></div>
+                </div>
+                <div class="md:grid md:grid-cols-4 p-4 border-b border-white border-opacity-10 text-left md:text-center">
+                    <div class="font-medium mb-2 md:mb-0 text-accent md:text-white">Maghrib</div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Waqt: </span><span class="font-semibold text-accent">7:23 PM</span></div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Adhan: </span><span class="font-semibold text-accent">7:23 PM</span></div>
+                    <div><span class="md:hidden text-gray-300 inline-block w-16">Iqamah: </span><span class="font-semibold text-accent">7:30 PM</span></div>
+                </div>
+                <div class="md:grid md:grid-cols-4 p-4 bg-white bg-opacity-5 text-left md:text-center">
+                    <div class="font-medium mb-2 md:mb-0 text-accent md:text-white">Isha</div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Waqt: </span><span class="font-semibold text-accent">8:45 PM</span></div>
+                    <div class="mb-2 md:mb-0"><span class="md:hidden text-gray-300 inline-block w-16">Adhan: </span><span class="font-semibold text-accent">8:45 PM</span></div>
+                    <div><span class="md:hidden text-gray-300 inline-block w-16">Iqamah: </span><span class="font-semibold text-accent">9:00 PM</span></div>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto mt-8 p-6 bg-black bg-opacity-20 rounded-lg text-center">
+                <h3 class="text-xl text-accent font-medium mb-4">Jumu'ah Prayer</h3>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <div>First Khutbah: <span class="font-semibold text-accent">1:00 PM</span></div>
+                    <div>Second Khutbah: <span class="font-semibold text-accent">2:00 PM</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl text-center font-light mb-12 text-dark">Upcoming Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/400x200/?lecture')"></div>
+                    <div class="p-6">
+                        <div class="text-primary font-semibold mb-2">May 15, 2023 • 7:30 PM</div>
+                        <h3 class="text-xl mb-3">Islamic Finance Workshop</h3>
+                        <p class="text-gray-600">Learn about halal investment options and financial planning according to Islamic principles.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/400x200/?children')"></div>
+                    <div class="p-6">
+                        <div class="text-primary font-semibold mb-2">May 22, 2023 • 10:00 AM</div>
+                        <h3 class="text-xl mb-3">Children's Quran Competition</h3>
+                        <p class="text-gray-600">Annual competition for children to showcase their Quranic memorization and recitation skills.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/400x200/?charity')"></div>
+                    <div class="p-6">
+                        <div class="text-primary font-semibold mb-2">May 29, 2023 • 9:00 AM</div>
+                        <h3 class="text-xl mb-3">Community Food Drive</h3>
+                        <p class="text-gray-600">Join us in collecting and distributing food to those in need in our local community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-20 text-white bg-cover bg-center bg-blend-overlay bg-black bg-opacity-80" style="background-image: url('https://source.unsplash.com/random/1200x600/?charity')">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-light mb-6">Support Our Mosque</h2>
+            <p class="max-w-2xl mx-auto mb-8">Your generous donations help us maintain our facilities, run educational programs, and provide services to our community. Every contribution, no matter how small, makes a difference.</p>
+            <a href="#" class="bg-primary hover:bg-accent px-6 py-3 rounded transition-all transform hover:-translate-y-1 inline-block">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl text-center font-light mb-12 text-dark">Contact Us</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 p-4">
+                    <h3 class="text-xl text-primary mb-6">Get in Touch</h3>
+                    <div class="flex mb-6">
+                        <div class="text-primary text-xl mr-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p>139 King St. East</p>
+                            <p>Bowmanville, ON, L1C 1N6</p>
+                            <p>Canada</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-6">
+                        <div class="text-primary text-xl mr-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p>(123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-6">
+                        <div class="text-primary text-xl mr-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p>info@masjidhakeem.org</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl text-primary mb-4">Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="w-full lg:w-1/2 p-4">
+                    <div class="h-80 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.4226141792185!2d-78.69017482392787!3d43.95991337100797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51c03cfed6ecb%3A0x73bda02bdf82e17c!2s139%20King%20St%20E%2C%20Bowmanville%2C%20ON%20L1C%201N6%2C%20Canada!5e0!3m2!1sen!2sus!4v1694122345678!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-dark text-white text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-2xl hover:text-accent transition-colors"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-accent transition-colors"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl hover:text-accent transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-accent transition-colors"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2023 Masjid Al-Hakeem. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
